@@ -92,7 +92,7 @@ class osxui (
     user   => $::boxen_user,
     domain => 'com.apple.finder',
     key    => 'NewWindowTargetPath',
-    value  => 'file://${HOME}',
+    value  => "file:///Users/${::boxen_user}",
     type   => 'string'
   }
 
