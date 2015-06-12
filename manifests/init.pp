@@ -10,6 +10,7 @@
 class osxui (
 ) {
   include osx::dock::disable
+  include osx::dock::autohide
   include osx::dock::disable_dashboard
 
   include osx::global::disable_key_press_and_hold
