@@ -1,0 +1,14 @@
+{
+  "name": "puppet-osxui",
+  "version": "0.0.1",
+  "author": "akerl",
+  "summary": "Configure core OSX UI constructs",
+  "license": "MIT",
+  "source": "https://github.com/halyard/puppet-osxui",
+  "project_page": "https://github.com/halyard/puppet-osxui",
+  "issues_url": "https://github.com/halyard/puppet-osxui/issues",
+  "dependencies": [
+  ],
+  "operatingsystem_support": [
+  ]
+}
