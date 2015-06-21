@@ -58,6 +58,7 @@ class osxui (
   }
 
   boxen::osx_defaults { 'Use list view in Finder':
+    user   => $::boxen_user,
     domain => 'com.apple.Finder',
     key    => 'FXPreferredViewStyle',
     value  => 'Nlsv',
@@ -138,6 +139,7 @@ class osxui (
   }
 
   boxen::osx_defaults { 'Dim keyboard after 1 minute of inactivity':
+    user   => $::boxen_user,
     domain => 'com.apple.BezelServices',
     key    => 'kDimTime',
     value  => 300,
@@ -145,6 +147,7 @@ class osxui (
   }
 
   boxen::osx_defaults { 'Crank up trackpad speed':
+    user   => $::boxen_user,
     domain => 'NSGlobalDomain',
     key    => 'com.apple.trackpad.scaling',
     value  => 6,
@@ -152,6 +155,7 @@ class osxui (
   }
 
   boxen::osx_defaults { 'Enable feedback on volume change':
+    user   => $::boxen_user,
     domain => 'NSGlobalDomain',
     key    => 'com.apple.sound.beep.feedback',
     value  => 1,
