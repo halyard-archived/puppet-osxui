@@ -50,6 +50,13 @@ class osxui (
   include osx::disable_app_quarantine
   include osx::no_network_dsstores
 
+  package { 'hyperspace-halyard':
+    provider => 'brewcask'
+  } ->
+  class { 'osx::screensaver::set':
+    name => 'Hyperspace',
+    path => "/Users/${::boxen_user}/Library/Screen Savers/Hyperspace.saver"
+  }
   include osx::screensaver::start_delay
 
   class { 'osx::dock::hot_corners':
