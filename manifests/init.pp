@@ -54,8 +54,8 @@ class osxui (
     provider => 'brewcask'
   } ->
   class { 'osx::screensaver::set':
-    name => 'Hyperspace',
-    path => "/Users/${::boxen_user}/Library/Screen Savers/Hyperspace.saver"
+    screensaver => 'Hyperspace',
+    path        => "/Users/${::boxen_user}/Library/Screen Savers/Hyperspace.saver"
   }
   include osx::screensaver::start_delay
 
