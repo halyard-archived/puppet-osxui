@@ -23,6 +23,7 @@ class osxui (
   include osx::global::disable_autocorrect
   include osx::global::key_repeat_delay
   include osx::global::key_repeat_rate
+  include osx::global::disable_smart_quotes
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
   include osx::global::scroll_behavior
