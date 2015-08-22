@@ -52,7 +52,8 @@ class osxui (
   include osx::no_network_dsstores
 
   package { 'hyperspace-halyard':
-    provider => 'brewcask'
+    provider => 'brewcask',
+    require  => Homebrew::Tap['halyard/casks']
   } ->
   class { 'osx::screensaver::set':
     screensaver => 'Hyperspace',
