@@ -13,5 +13,3 @@ task test: [
   :lint
 ]
 
-desc 'Default test run'
-task default: [:test]
