@@ -1,11 +1,13 @@
 {
   "name": "halyard-osxui",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "author": "Les Aker",
   "license": "MIT",
   "summary": "Configure OSX UI elements via Boxen",
   "source": "https://github.com/halyard/puppet-osxui",
   "project_page": "https://github.com/halyard/puppet-osxui",
   "issues_url": "https://github.com/halyard/puppet-osxui/issues",
-  "dependencies": []
+  "dependencies": [
+
+  ]
 }
