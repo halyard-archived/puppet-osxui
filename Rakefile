@@ -9,6 +9,7 @@ PuppetLint.configuration.with_filename = true
 
 desc 'Run syntax and lint checks'
 task test: [
+  :metadata,
   :syntax,
   :lint
 ]

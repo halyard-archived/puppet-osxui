@@ -11,8 +11,12 @@ GEM
       json_pure
     http-cookie (1.0.2)
       domain_name (~> 0.5)
+    json (1.8.3)
     json_pure (1.8.2)
     metaclass (0.0.4)
+    metadata-json-lint (0.0.11)
+      json
+      spdx-licenses (~> 1.0)
     mime-types (2.6.2)
     mocha (1.1.0)
       metaclass (~> 0.0.1)
@@ -53,6 +57,8 @@ GEM
     rspec-puppet (2.2.0)
       rspec
     rspec-support (3.3.0)
+    spdx-licenses (1.0.0)
+      json
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.1)
@@ -61,6 +67,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  metadata-json-lint (~> 0.0.11)
   puppet (~> 4.2.0)
   puppet-blacksmith (~> 3.3.1)
   puppet-lint (~> 1.1.0)
