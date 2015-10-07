@@ -1,6 +1,6 @@
 {
   "name": "halyard-osxui",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "author": "Les Aker",
   "license": "MIT",
   "summary": "Configure OSX UI elements via Boxen",
@@ -13,7 +13,10 @@
   "operatingsystem_support": [
     {
       "operatingsystem": "Darwin",
-      "operatingsystemmajrelease": ["14", "15"]
+      "operatingsystemmajrelease": [
+        "14",
+        "15"
+      ]
     }
   ]
 }
