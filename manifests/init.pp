@@ -62,6 +62,6 @@ class osxui (
   include osx::screensaver::start_delay
 
   class { 'osx::dock::hot_corners':
-    top_right => "Start Screen Saver"
+    top_right => 'Start Screen Saver'
   }
 }
