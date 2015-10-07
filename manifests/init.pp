@@ -43,11 +43,6 @@ class osxui (
   include osx::finder::view_style
   include osx::finder::default_path
 
-  include osx::software_update
-  include osx::software_update::frequency
-
-  include osx::security::firewall
-
   include osx::disable_app_quarantine
   include osx::no_network_dsstores
 
