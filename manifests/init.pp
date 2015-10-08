@@ -52,7 +52,9 @@ class osxui (
   } ->
   class { 'osx::screensaver::set':
     screensaver => 'Hyperspace',
-    path        => "/Users/${::boxen_user}/Library/Screen Savers/Hyperspace.saver"
+    path        => join([
+      "/Users/${::boxen_user}/Library/Screen Savers/",
+      'Hyperspace.saver'])
   }
   include osx::screensaver::start_delay
 
