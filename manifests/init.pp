@@ -34,7 +34,6 @@ class osxui (
 
   include osx::sound::interface_sound_effects
   include osx::sound::volume_change_feedback
-  include osx::sound::battery_chime
 
   include osx::finder::unhide_library
   include osx::finder::show_all_filename_extensions
