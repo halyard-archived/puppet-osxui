@@ -17,6 +17,10 @@ class osxui (
   include osx::keyboard::dim_backlight
 
   include osx::mouse::trackpad_speed
+  include osx::mouse::silent_trackpad
+  class { 'osx::mouse::force_touch':
+    enabled => false
+  }
 
   include osx::global::disable_key_press_and_hold
   include osx::global::enable_keyboard_control_access
