@@ -53,8 +53,8 @@ class osxui (
   package { 'hyperspace-halyard':
     provider => 'brewcask',
     require  => Homebrew::Tap['halyard/casks']
-  } ->
-  class { 'osx::screensaver::set':
+  }
+  -> class { 'osx::screensaver::set':
     screensaver => 'Hyperspace',
     path        => join([
       "/Users/${::boxen_user}/Library/Screen Savers/",
